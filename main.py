@@ -17,7 +17,7 @@ def job():
     print('Fim da gravação')
 
 
-schedule.every().day.at("17:59").do(job)
+schedule.every().day.at("17:59:30").do(job)
 
 while True:
     schedule.run_pending()
